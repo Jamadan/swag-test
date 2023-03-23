@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Converted from HelloWorldResponse.swagger.yaml with typeconv
+  version: '1'
+  x-id: HelloWorldResponse.swagger.yaml
+  x-comment: >-
+    Generated from src/models/HelloWorldResponse.ts by core-types-json-schema
+    (https://github.com/grantila/core-types-json-schema) on behalf of typeconv
+    (https://github.com/grantila/typeconv)
+paths: {}
+components:
+  schemas:
+    HelloWorldResponse:
+      properties:
+        brand:
+          title: HelloWorldResponse.brand
+          type: string
+        sku:
+          title: HelloWorldResponse.sku
+          type: string
+      required:
+        - brand
+        - sku
+      additionalProperties: false
+      title: HelloWorldResponse
+      type: object

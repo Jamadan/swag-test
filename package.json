@@ -1,0 +1,30 @@
+{
+  "name": "swag-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "openapi:yaml": "typeconv -f ts -t oapi --oapi-format yaml --output-extension 'swagger.yaml' --output-directory 'src/models/openapi' 'src/models/*.ts'",
+    "postbuild": "cpy 'models/**/*.swagger.yaml' public/openapi --flat"
+  },
+  "dependencies": {
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "next-swagger-doc": "next",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swagger-ui-react": "latest",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.5",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "cpy-cli": "4.2.0",
+    "typeconv": "2.1.0"
+  }
+}

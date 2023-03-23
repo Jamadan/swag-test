@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Converted from HelloWorldRequest.swagger.yaml with typeconv
+  version: '1'
+  x-id: HelloWorldRequest.swagger.yaml
+  x-comment: >-
+    Generated from src/models/HelloWorldRequest.ts by core-types-json-schema
+    (https://github.com/grantila/core-types-json-schema) on behalf of typeconv
+    (https://github.com/grantila/typeconv)
+paths: {}
+components:
+  schemas:
+    HelloWorldRequest:
+      properties:
+        query:
+          properties:
+            brand:
+              title: HelloWorldRequest.query.brand
+              type: string
+            sku:
+              title: HelloWorldRequest.query.sku
+              type: string
+          required:
+            - brand
+            - sku
+          additionalProperties: false
+          title: HelloWorldRequest.query
+          type: object
+      required:
+        - query
+      additionalProperties: false
+      title: HelloWorldRequest
+      type: object
